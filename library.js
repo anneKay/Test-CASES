@@ -37,3 +37,23 @@ var dataTypes = function(val) {
     return undefined;
   }
 }
+
+primeNumb: function(num) {
+  for (var i = 2; i < num; i ++ ) {
+    if (num % i === 0) {
+      return false;
+    } else {
+      return true;
+    }
+}
+};
+var getPrimes = function(n) {
+  var myArray = [2];
+  for (var i = 3; i < n; i += 2) {
+    if (primeNumb(i)) {
+      myArray.push(i);
+  }
+}  
+
+
+}     
